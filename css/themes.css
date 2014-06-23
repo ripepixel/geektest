@@ -1,0 +1,771 @@
+/* [ Skin: Yellow ] */
+
+.yellow-skin .header a:hover,
+.yellow-skin .header li.current > a,
+.yellow-skin .ib-inner a:hover,
+.yellow-skin .footer a,
+.yellow-skin .works-nav a:hover,
+.yellow-skin .works-nav .selected a,
+.yellow-skin .pricing .slide-nav.lined a.selected,
+.yellow-skin .pricing .slide-nav.lined a:hover,
+.yellow-skin .nav-currency a:hover,
+.yellow-skin .team-popup .content-footer li a:hover i{
+    color: #f8aa2e;
+}
+
+.yellow-skin .lang nav,
+.yellow-skin .lang a,
+.yellow-skin .icon,
+.yellow-skin .portfolio .item:before,
+.yellow-skin .highlight,
+.yellow-skin .ribbon-slider li a:before,
+.yellow-skin .slide-nav.lined a.selected,
+.yellow-skin .slide-nav.lined a:hover,
+.yellow-skin .num-line ins,
+.yellow-skin .img figure:before,
+.yellow-skin .works-container .descr:before,
+.yellow-skin .slide-nav a.selected,
+.yellow-skin .contact-social li:before,
+.yellow-skin .nav-currency ins{
+    background-color: #f8aa2e;
+}
+
+.yellow-skin .button {
+    border-bottom-color: #f8aa2e;
+    background-color: #f8aa2e;
+}
+
+.yellow-skin .slide-arrow:hover,
+.yellow-skin .works-nav .lavalamp-object,
+.yellow-skin .footer a:hover,
+.yellow-skin .inverse a:not(.button):hover,
+.yellow-skin .ib-inner a,
+.yellow-skin .team-popup .content-footer > a:hover{
+    border-color: #cc8b23;
+}
+
+.yellow-skin .button:hover,
+.yellow-skin .lang li a:hover,
+.yellow-skin .filling.highlight .button:hover{
+    background-color: #F9BB58;
+}
+
+.yellow-skin .footer a:hover,
+.yellow-skin .ib-inner a,
+.yellow-skin .img a:hover,
+.yellow-skin .phonenumber,
+.yellow-skin .footer .logo:hover,
+.yellow-skin .extendmenu .social li a:hover,
+.yellow-skin .extendmenu .social li a:hover i{
+    color:#cc8b23 !important;
+}
+
+.yellow-skin .button.transparent-green,
+.yellow-skin .button.transparent-darkgrey {
+    color:#cc8b23 !important;
+    background-color: transparent !important;
+    border: 2px solid #cc8b23  !important;
+}
+.yellow-skin .button.transparent-green:hover,
+.yellow-skin .button.transparent-darkgrey:hover {
+    background-color: #ffb641 !important;
+    color: #fff !important;
+    border-color: #ffb641 !important;
+}
+
+.yellow-skin .pricing .border-top{
+    border-top-color: #f8aa2e;
+}
+
+.yellow-skin a.button:hover,
+.yellow-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Aqua ] */
+
+.aqua-skin .header a:hover,
+.aqua-skin .header li.current > a,
+.aqua-skin .ib-inner a:hover,
+.aqua-skin .footer a,
+.aqua-skin .works-nav a:hover,
+.aqua-skin .works-nav .selected a,
+.aqua-skin .pricing .slide-nav.lined a.selected,
+.aqua-skin .pricing .slide-nav.lined a:hover,
+.aqua-skin .nav-currency a:hover,
+.aqua-skin .team-popup .content-footer li a:hover i{
+    color: #4FCBD8;
+}
+
+.aqua-skin .lang nav,
+.aqua-skin .lang a,
+.aqua-skin .icon,
+.aqua-skin .portfolio .item:before,
+.aqua-skin .highlight,
+.aqua-skin .ribbon-slider li a:before,
+.aqua-skin .slide-nav.lined a.selected,
+.aqua-skin .slide-nav.lined a:hover,
+.aqua-skin .num-line ins,
+.aqua-skin .img figure:before,
+.aqua-skin .works-container .descr:before,
+.aqua-skin .slide-nav a.selected,
+.aqua-skin .contact-social li:before,
+.aqua-skin .nav-currency ins{
+    background-color: #4FCBD8;
+}
+
+.aqua-skin .button {
+    border-bottom-color: #cc8b23;
+    background-color: #4FCBD8;
+}
+
+.aqua-skin .slide-arrow:hover,
+.aqua-skin .works-nav .lavalamp-object,
+.aqua-skin .footer a:hover,
+.aqua-skin .inverse a:not(.button):hover,
+.aqua-skin .ib-inner a,
+.aqua-skin .team-popup .content-footer > a:hover{
+    border-color: #72D5E0;
+}
+
+.aqua-skin .button:hover,
+.aqua-skin .lang li a:hover,
+.aqua-skin .filling.highlight .button:hover{
+    background-color: #72D5E0;
+}
+
+.aqua-skin .footer a:hover,
+.aqua-skin .ib-inner a,
+.aqua-skin .img a:hover,
+.aqua-skin .phonenumber,
+.aqua-skin .footer .logo:hover,
+.aqua-skin .extendmenu .social li a:hover,
+.aqua-skin .extendmenu .social li a:hover i{
+    color:#72D5E0 !important;
+}
+
+.aqua-skin .button.transparent-green,
+.aqua-skin .button.transparent-darkgrey {
+    color:#4FCBD8 !important;
+    background-color: transparent !important;
+    border: 2px solid #4FCBD8  !important;
+}
+.aqua-skin .button.transparent-green:hover,
+.aqua-skin .button.transparent-darkgrey:hover {
+    background-color: #4FCBD8 !important;
+    color: #fff !important;
+    border-color: #4FCBD8 !important;
+}
+
+.aqua-skin .pricing .border-top{
+    border-top-color: #4FCBD8;
+}
+
+.aqua-skin a.button:hover,
+.aqua-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Red ] */
+
+.red-skin .header a:hover,
+.red-skin .header li.current > a,
+.red-skin .ib-inner a:hover,
+.red-skin .footer a,
+.red-skin .works-nav a:hover,
+.red-skin .works-nav .selected a,
+.red-skin .pricing .slide-nav.lined a.selected,
+.red-skin .pricing .slide-nav.lined a:hover,
+.red-skin .nav-currency a:hover,
+.red-skin .team-popup .content-footer li a:hover i{
+    color: #fa6353;
+}
+
+.red-skin .lang nav,
+.red-skin .lang a,
+.red-skin .icon,
+.red-skin .portfolio .item:before,
+.red-skin .highlight,
+.red-skin .ribbon-slider li a:before,
+.red-skin .slide-nav.lined a.selected,
+.red-skin .slide-nav.lined a:hover,
+.red-skin .num-line ins,
+.red-skin .img figure:before,
+.red-skin .works-container .descr:before,
+.red-skin .slide-nav a.selected,
+.red-skin .contact-social li:before,
+.red-skin .nav-currency ins{
+    background-color: #fa6353;
+}
+
+.red-skin .button {
+    border-bottom-color: #fa6353;
+    background-color: #fa6353;
+}
+
+.red-skin .slide-arrow:hover,
+.red-skin .works-nav .lavalamp-object,
+.red-skin .footer a:hover,
+.red-skin .inverse a:not(.button):hover,
+.red-skin .ib-inner a,
+.red-skin .team-popup .content-footer > a:hover{
+    border-color: #da5446;
+}
+
+.red-skin .button:hover,
+.red-skin .lang li a:hover,
+.red-skin .filling.highlight .button:hover{
+    background-color: #FB8275;
+}
+
+.red-skin .slide-nav a.selected{
+    background-color: #FB8275;
+}
+
+.red-skin .footer a:hover,
+.red-skin .ib-inner a,
+.red-skin .img a:hover,
+.red-skin .phonenumber,
+.red-skin .footer .logo:hover,
+.red-skin .extendmenu .social li a:hover,
+.red-skin .extendmenu .social li a:hover i{
+    color:#da5446 !important;
+}
+
+.red-skin .button.transparent-green,
+.red-skin .button.transparent-darkgrey {
+    color:#da5446 !important;
+    background-color: transparent !important;
+    border: 2px solid #da5446  !important;
+}
+.red-skin .button.transparent-green:hover,
+.red-skin .button.transparent-darkgrey:hover {
+    background-color: #fa6353 !important;
+    color: #fff !important;
+    border-color: #fa6353 !important;
+}
+
+.red-skin .pricing .border-top{
+    border-top-color: #fa6353;
+}
+
+.red-skin a.button:hover,
+.red-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Blue ] */
+
+.blue-skin .header a:hover,
+.blue-skin .header li.current > a,
+.blue-skin .ib-inner a:hover,
+.blue-skin .footer a,
+.blue-skin .works-nav a:hover,
+.blue-skin .works-nav .selected a,
+.blue-skin .pricing .slide-nav.lined a.selected,
+.blue-skin .pricing .slide-nav.lined a:hover,
+.blue-skin .nav-currency a:hover,
+.blue-skin .team-popup .content-footer li a:hover i{
+    color: #40afd8;
+}
+
+.blue-skin .lang nav,
+.blue-skin .lang a,
+.blue-skin .icon,
+.blue-skin .portfolio .item:before,
+.blue-skin .highlight,
+.blue-skin .ribbon-slider li a:before,
+.blue-skin .slide-nav.lined a.selected,
+.blue-skin .slide-nav.lined a:hover,
+.blue-skin .num-line ins,
+.blue-skin .img figure:before,
+.blue-skin .works-container .descr:before,
+.blue-skin .slide-nav a.selected,
+.blue-skin .contact-social li:before,
+.blue-skin .nav-currency ins{
+    background-color: #40afd8;
+}
+
+.blue-skin .button {
+    border-bottom-color: #3399be;
+    background-color: #40afd8;
+}
+
+.blue-skin .slide-arrow:hover,
+.blue-skin .works-nav .lavalamp-object,
+.blue-skin .footer a:hover,
+.blue-skin .inverse a:not(.button):hover,
+.blue-skin .ib-inner a,
+.blue-skin .team-popup .content-footer > a:hover{
+    border-color: #3399be;
+}
+
+.blue-skin .button:hover,
+.blue-skin .lang li a:hover,
+.blue-skin .filling.highlight .button:hover{
+    background-color: #66BFE0;
+}
+
+.blue-skin .slide-nav a.selected{
+    background-color: #66BFE0;
+}
+
+.blue-skin .footer a:hover,
+.blue-skin .ib-inner a,
+.blue-skin .img a:hover,
+.blue-skin .phonenumber,
+.blue-skin .footer .logo:hover,
+.blue-skin .extendmenu .social li a:hover,
+.blue-skin .extendmenu .social li a:hover i{
+    color:#3399be !important;
+}
+
+.blue-skin .button.transparent-green,
+.blue-skin .button.transparent-darkgrey {
+    color:#40afd8 !important;
+    background-color: transparent !important;
+    border: 2px solid #40afd8  !important;
+}
+.blue-skin .button.transparent-green:hover,
+.blue-skin .button.transparent-darkgrey:hover {
+    background-color: #40afd8 !important;
+    color: #fff !important;
+    border-color: #40afd8 !important;
+}
+
+.blue-skin .pricing .border-top{
+    border-top-color: #40afd8;
+}
+
+.blue-skin a.button:hover,
+.blue-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Orange ] */
+
+.orange-skin .header a:hover,
+.orange-skin .header li.current > a,
+.orange-skin .ib-inner a:hover,
+.orange-skin .footer a,
+.orange-skin .works-nav a:hover,
+.orange-skin .works-nav .selected a,
+.orange-skin .pricing .slide-nav.lined a.selected,
+.orange-skin .pricing .slide-nav.lined a:hover,
+.orange-skin .nav-currency a:hover,
+.orange-skin .team-popup .content-footer li a:hover i{
+    color: #ff9641;
+}
+
+.orange-skin .lang nav,
+.orange-skin .lang a,
+.orange-skin .icon,
+.orange-skin .portfolio .item:before,
+.orange-skin .highlight,
+.orange-skin .ribbon-slider li a:before,
+.orange-skin .slide-nav.lined a.selected,
+.orange-skin .slide-nav.lined a:hover,
+.orange-skin .num-line ins,
+.orange-skin .img figure:before,
+.orange-skin .works-container .descr:before,
+.orange-skin .slide-nav a.selected,
+.orange-skin .contact-social li:before,
+.orange-skin .nav-currency ins{
+    background-color: #ff9641;
+}
+
+.orange-skin .button {
+    border-bottom-color: #d27c37;
+    background-color: #ff9641;
+}
+
+.orange-skin .slide-arrow:hover,
+.orange-skin .works-nav .lavalamp-object,
+.orange-skin .footer a:hover,
+.orange-skin .inverse a:not(.button):hover,
+.orange-skin .ib-inner a,
+.orange-skin .team-popup .content-footer > a:hover{
+    border-color: #d27c37;
+}
+
+.orange-skin .button:hover,
+.orange-skin .lang li a:hover,
+.orange-skin .filling.highlight .button:hover{
+    background-color: #FFAB67;
+}
+
+.orange-skin .slide-nav a.selected{
+    background-color: #FFAB67;
+}
+
+.orange-skin .footer a:hover,
+.orange-skin .ib-inner a,
+.orange-skin .img a:hover,
+.orange-skin .phonenumber,
+.orange-skin .footer .logo:hover,
+.orange-skin .extendmenu .social li a:hover,
+.orange-skin .extendmenu .social li a:hover i{
+    color:#d27c37 !important;
+}
+
+.orange-skin .button.transparent-green,
+.orange-skin .button.transparent-darkgrey {
+    color:#ff9641 !important;
+    background-color: transparent !important;
+    border: 2px solid #ff9641  !important;
+}
+.orange-skin .button.transparent-green:hover,
+.orange-skin .button.transparent-darkgrey:hover {
+    background-color: #ff9641 !important;
+    color: #fff !important;
+    border-color: #ff9641 !important;
+}
+
+.orange-skin .pricing .border-top{
+    border-top-color: #ff9641;
+}
+
+.orange-skin a.button:hover,
+.orange-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Gray ] */
+
+.gray-skin .header a:hover,
+.gray-skin .header li.current > a,
+.gray-skin .ib-inner a:hover,
+.gray-skin .footer a,
+.gray-skin .works-nav a:hover,
+.gray-skin .works-nav .selected a,
+.gray-skin .pricing .slide-nav.lined a.selected,
+.gray-skin .pricing .slide-nav.lined a:hover,
+.gray-skin .nav-currency a:hover,
+.gray-skin .team-popup .content-footer li a:hover i{
+    color: #a6a6a6;
+}
+
+.gray-skin .lang nav,
+.gray-skin .lang a,
+.gray-skin .icon,
+.gray-skin .portfolio .item:before,
+.gray-skin .highlight,
+.gray-skin .ribbon-slider li a:before,
+.gray-skin .slide-nav.lined a.selected,
+.gray-skin .slide-nav.lined a:hover,
+.gray-skin .num-line ins,
+.gray-skin .img figure:before,
+.gray-skin .works-container .descr:before,
+.gray-skin .slide-nav a.selected,
+.gray-skin .contact-social li:before,
+.gray-skin .nav-currency ins{
+    background-color: #a6a6a6;
+}
+
+.gray-skin .button {
+    border-bottom-color: #8c8c8c;
+    background-color: #a6a6a6;
+}
+
+.gray-skin .slide-arrow:hover,
+.gray-skin .works-nav .lavalamp-object,
+.gray-skin .footer a:hover,
+.gray-skin .inverse a:not(.button):hover,
+.gray-skin .ib-inner a,
+.gray-skin .team-popup .content-footer > a:hover{
+    border-color: #8c8c8c;
+}
+
+.gray-skin .button:hover,
+.gray-skin .lang li a:hover,
+.gray-skin .filling.highlight .button:hover{
+    background-color: #B8B8B8;
+}
+
+.gray-skin .slide-nav a.selected{
+    background-color: #B8B8B8;
+}
+
+.gray-skin .footer a:hover,
+.gray-skin .ib-inner a,
+.gray-skin .img a:hover,
+.gray-skin .phonenumber,
+.gray-skin .footer .logo:hover,
+.gray-skin .extendmenu .social li a:hover,
+.gray-skin .extendmenu .social li a:hover i{
+    color:#8c8c8c !important;
+}
+
+.gray-skin .button.transparent-green,
+.gray-skin .button.transparent-darkgrey {
+    color:#a6a6a6 !important;
+    background-color: transparent !important;
+    border: 2px solid #a6a6a6  !important;
+}
+.gray-skin .button.transparent-green:hover,
+.gray-skin .button.transparent-darkgrey:hover {
+    background-color: #a6a6a6 !important;
+    color: #fff !important;
+    border-color: #a6a6a6 !important;
+}
+
+.gray-skin .pricing .border-top{
+    border-top-color: #a6a6a6;
+}
+
+.gray-skin a.button:hover,
+.gray-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Brown ] */
+
+.brown-skin .header a:hover,
+.brown-skin .header li.current > a,
+.brown-skin .ib-inner a:hover,
+.brown-skin .footer a,
+.brown-skin .works-nav a:hover,
+.brown-skin .works-nav .selected a,
+.brown-skin .pricing .slide-nav.lined a.selected,
+.brown-skin .pricing .slide-nav.lined a:hover,
+.brown-skin .nav-currency a:hover,
+.brown-skin .team-popup .content-footer li a:hover i{
+    color: #92633c;
+}
+
+.brown-skin .lang nav,
+.brown-skin .lang a,
+.brown-skin .icon,
+.brown-skin .portfolio .item:before,
+.brown-skin .highlight,
+.brown-skin .ribbon-slider li a:before,
+.brown-skin .slide-nav.lined a.selected,
+.brown-skin .slide-nav.lined a:hover,
+.brown-skin .num-line ins,
+.brown-skin .img figure:before,
+.brown-skin .works-container .descr:before,
+.brown-skin .slide-nav a.selected,
+.brown-skin .contact-social li:before,
+.brown-skin .nav-currency ins{
+    background-color: #92633c;
+}
+
+.brown-skin .button {
+    border-bottom-color: #92633c;
+    background-color: #92633c;
+}
+
+.brown-skin .slide-arrow:hover,
+.brown-skin .works-nav .lavalamp-object,
+.brown-skin .footer a:hover,
+.brown-skin .inverse a:not(.button):hover,
+.brown-skin .ib-inner a,
+.brown-skin .team-popup .content-footer > a:hover{
+    border-color: #ae7e54;
+}
+
+.brown-skin .button:hover,
+.brown-skin .lang li a:hover,
+.brown-skin .filling.highlight .button:hover{
+    background-color: #ae7e54;
+}
+
+.brown-skin .slide-nav a.selected{
+    background-color: #ae7e54;
+}
+
+.brown-skin .footer a:hover,
+.brown-skin .ib-inner a,
+.brown-skin .img a:hover,
+.brown-skin .phonenumber,
+.brown-skin .footer .logo:hover,
+.brown-skin .extendmenu .social li a:hover,
+.brown-skin .extendmenu .social li a:hover i{
+    color:#ae7e54 !important;
+}
+
+.brown-skin .button.transparent-green,
+.brown-skin .button.transparent-darkgrey {
+    color:#92633c !important;
+    background-color: transparent !important;
+    border: 2px solid #92633c  !important;
+}
+.brown-skin .button.transparent-green:hover,
+.brown-skin .button.transparent-darkgrey:hover {
+    background-color: #92633c !important;
+    color: #fff !important;
+    border-color: #92633c !important;
+}
+
+.brown-skin .pricing .border-top{
+    border-top-color: #92633c;
+}
+
+.brown-skin a.button:hover,
+.brown-skin input.button:hover{ color:#fff !important; }
+
+/* [ Skin: Sand ] */
+
+.sand-skin .header a:hover,
+.sand-skin .header li.current > a,
+.sand-skin .ib-inner a:hover,
+.sand-skin .footer a,
+.sand-skin .works-nav a:hover,
+.sand-skin .works-nav .selected a,
+.sand-skin .pricing .slide-nav.lined a.selected,
+.sand-skin .pricing .slide-nav.lined a:hover,
+.sand-skin .nav-currency a:hover,
+.sand-skin .team-popup .content-footer li a:hover i{
+    color: #998675;
+}
+
+.sand-skin .lang nav,
+.sand-skin .lang a,
+.sand-skin .icon,
+.sand-skin .portfolio .item:before,
+.sand-skin .highlight,
+.sand-skin .ribbon-slider li a:before,
+.sand-skin .slide-nav.lined a.selected,
+.sand-skin .slide-nav.lined a:hover,
+.sand-skin .num-line ins,
+.sand-skin .img figure:before,
+.sand-skin .works-container .descr:before,
+.sand-skin .slide-nav a.selected,
+.sand-skin .contact-social li:before,
+.sand-skin .nav-currency ins{
+    background-color: #998675;
+}
+
+.sand-skin .button {
+    border-bottom-color: #b09e8d;
+    background-color: #998675;
+}
+
+.sand-skin .slide-arrow:hover,
+.sand-skin .works-nav .lavalamp-object,
+.sand-skin .footer a:hover,
+.sand-skin .inverse a:not(.button):hover,
+.sand-skin .ib-inner a,
+.sand-skin .team-popup .content-footer > a:hover{
+    border-color: #b09e8d;
+}
+
+.sand-skin .button:hover,
+.sand-skin .lang li a:hover,
+.sand-skin .filling.highlight .button:hover{
+    background-color: #b09e8d;
+}
+
+.sand-skin .slide-nav a.selected{
+    background-color: #b09e8d;
+}
+
+.sand-skin .footer a:hover,
+.sand-skin .ib-inner a,
+.sand-skin .img a:hover,
+.sand-skin .phonenumber,
+.sand-skin .footer .logo:hover,
+.sand-skin .extendmenu .social li a:hover,
+.sand-skin .extendmenu .social li a:hover i{
+    color:#b09e8d !important;
+}
+
+.sand-skin .button.transparent-green,
+.sand-skin .button.transparent-darkgrey{
+    color:#998675 !important;
+    background-color: transparent !important;
+    border: 2px solid #998675  !important;
+}
+.sand-skin .button.transparent-green:hover,
+.sand-skin .button.transparent-darkgrey:hover{
+    background-color: #998675 !important;
+    color: #fff !important;
+    border-color: #998675 !important;
+}
+
+.sand-skin .pricing .border-top{
+    border-top-color: #998675;
+}
+
+.sand-skin a.button:hover,
+.sand-skin input.button:hover{ color:#fff !important; }
+
+
+/* Palette */
+
+#palette {
+    position: fixed;
+    top: 20%;
+    left: -150px;
+    z-index: 99;
+    overflow: hidden;
+}
+
+#palette a {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+#palette nav {
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+
+#palette a.palette-edit {
+    border-radius: 0 5px 5px 0;
+    background-color: #fff;
+    float: left;
+}
+
+#palette a img {
+    vertical-align: middle;
+}
+
+
+#palette a.palette-aqua {
+    background-color: #4FCBD8;
+}
+
+#palette a.palette-green {
+    background-color: #00A651;
+}
+
+#palette a.palette-yellow {
+    background-color: #f8aa2e;
+}
+
+#palette a.palette-red {
+    background-color: #fa6353;
+}
+
+#palette a.palette-blue {
+    background-color: #40afd8;
+}
+
+#palette a.palette-orange {
+    background-color: #ff9641;
+}
+
+#palette a.palette-gray {
+    background-color: #a6a6a6;
+}
+
+#palette a.palette-brown {
+    background-color: #92633c;
+}
+
+#palette a.palette-sand {
+    background-color: #998675;
+}
+
+#palette a.selected span {
+    background: url(../images/palette-active.png) center center no-repeat;
+    width: 50px;
+    height: 50px;
+    content: '\0020';
+    display: block;
+}
+
+#palette nav a:hover:after {
+    background-color: #fff;
+    opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '\0020';
+}
