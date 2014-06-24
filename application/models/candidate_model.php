@@ -33,7 +33,7 @@ class Candidate_model extends CI_Model {
         if($q->num_rows() == 1) {
             $row = $q->row();
             $data = array(
-                'candidate_id' => $row->id,
+                'user_id' => $row->id,
                 'user_type' => 'candidate'
             );
 

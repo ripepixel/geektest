@@ -25,11 +25,11 @@
                         <div class="separator thin"></div>
                         <p>Each campaign includes a job listing and unlimited testing for the potential candidates. Job listings run from 30 to 60 days depending on your package.</p>
                         <div class="separator thin"></div>
-                        <nav class="nav-currency">
+                        <!-- <nav class="nav-currency">
                             <a href="#" class="selected" data-currency="£">GBP</a>
                             <a href="#" class="" data-currency="$">USD</a>
                             <ins></ins>
-                        </nav>
+                        </nav> -->
                     </div>
                 </article>
                 <footer class="content-footer"></footer>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="equal">
                                 <div class="grid_3">
-                                    <h2>Starter</h2>
+                                    <h2>Single</h2>
                                     <div class="num" data-pounds="39" data-dollars="49"><sup>£</sup><ins>39</ins></div>
                                     <h6 class="grey-c">one payment</h6>
                                     <div class="separator"></div>
@@ -69,16 +69,18 @@
                                     <h6 class="grey-c">per month</h6>
                                     <div class="separator"></div>
                                     <p>Unlimited Campaigns<br>Unlimited Tests<br>60 Day Job Listing<br>&mdash;</p>
-                                    <a href="#" class="button transparent-gray">Get Started</a><br>
+                                    <a href="#" class="button transparent-gray">Get Started</a>
+                                    <h6>14 days trial</h6>
                                 </div>
 
                                 <div class="grid_3 bg-grey rounded">
                                     <h2>Agency Plus</h2>
-                                    <div class="num" data-pounds="129" data-dollars="149"><sup>£</sup><ins>129</ins></div>
+                                    <div class="num" data-pounds="149" data-dollars="149"><sup>£</sup><ins>149</ins></div>
                                     <h6 class="grey-c">per month</h6>
                                     <div class="separator"></div>
                                     <p>Unlimited Campaigns<br>Unlimited Tests<br>60 Day Job Listing<br>Access to CV database</p>
-                                    <a href="#" class="button transparent-gray">Get Started</a><br>
+                                    <a href="#" class="button transparent-gray">Get Started</a>
+                                    <h6>14 days trial</h6>
                                 </div>
                             </div>
                         </li>

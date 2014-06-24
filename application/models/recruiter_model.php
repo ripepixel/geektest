@@ -33,7 +33,7 @@ class Recruiter_model extends CI_Model {
         if($q->num_rows() == 1) {
             $row = $q->row();
             $data = array(
-                'candidate_id' => $row->id,
+                'user_id' => $row->id,
                 'user_type' => 'recruiter'
             );
 
@@ -50,6 +50,34 @@ class Recruiter_model extends CI_Model {
         if(!$this->session->userdata('user_type')) {
             $this->session->set_flashdata('error', 'Please log in first');
             redirect('launch/recruiters');
+        }
+    }
+
+    function recruiterHasCredits($uid)
+    {
+        $this->db->where('id', $uid);
+        $q = $this->db->get('recruiters');
+
+        $row = $q->row();
+
+        if($row->credits > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    function getCredits($uid)
+    {
+        $this->db->where('id', $uid);
+        $q = $this->db->get('recruiters');
+
+        $row = $q->row();
+
+        if($row->credits > 0) {
+            return $row->credits;
+        } else {
+            return 0;
         }
     }
 
