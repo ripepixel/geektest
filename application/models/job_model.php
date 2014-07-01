@@ -38,6 +38,18 @@ class Job_model extends CI_Model {
     	}
     }
 
+		function createJob($data)
+		{
+			$this->db->insert('jobs', $data);
+			return true;
+		}
+		
+		function getRecruiterJobs($rid)
+		{
+			//$this->db->where('recruiter_id', $rid);
+			
+		}
+
 
 
 

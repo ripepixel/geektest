@@ -82,6 +82,25 @@ class Recruiter_model extends CI_Model {
         }
     }
 
+		function decreaseCredits($uid, $amt)
+		{
+			$this->db->where('id', $uid);
+			$q = $this->db->get('recruiters');
+			if($q->num_rows() == 1) {
+				$row = $q->row();
+				
+				$new_credits = $q->credits - $amt;
+				
+				$this->db->where('id', $uid);
+				$data = array('credits' => $new_credits);
+				$this->db->update('recruiters', $data);
+				
+				return true;
+			} else {
+				return false;
+			}
+		}
+
 
 
 }
