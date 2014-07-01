@@ -2203,6 +2203,7 @@ label {
 }
 
 input[type="text"],
+input[type="date"],
 input[type="email"],
 input[type="password"],
 textarea {
@@ -2243,6 +2244,7 @@ select::-webkit-input-placeholder { opacity: 1; color:#b2b2b2; font-family: 'tex
 select::-moz-placeholder { opacity: 1; color: #b2b2b2; font-family: 'texgyreherosregular'; }
 textarea::-webkit-input-placeholder { opacity: 1; color:#b2b2b2; font-family: 'texgyreherosregular'; }
 textarea::-moz-placeholder { opacity: 1; color: #b2b2b2; font-family: 'texgyreherosregular'; }
+
 
 input:invalid,
 input.invalid,

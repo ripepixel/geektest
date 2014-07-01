@@ -34,6 +34,7 @@ class Recruiter_model extends CI_Model {
             $row = $q->row();
             $data = array(
                 'user_id' => $row->id,
+                'user_email' => $row->email,
                 'user_type' => 'recruiter'
             );
 

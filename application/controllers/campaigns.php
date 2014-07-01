@@ -6,6 +6,8 @@ class Campaigns extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Recruiter_model');
+		$this->load->model('Job_model');
+		$this->load->model('Test_model');
 		$this->Recruiter_model->isValidated();
 	}
 
@@ -17,6 +19,9 @@ class Campaigns extends CI_Controller {
 
 		if($credits) {
 			// has credits, display page
+			$data['job_types'] = $this->Job_model->getJobTypes(TRUE);
+			$data['salary_types'] = $this->Job_model->getSalaryTypes(TRUE);
+			$data['tests'] = $this->Test_model->getTests(TRUE);
 			$data['main'] = "campaigns/create";
 			$this->load->view('template/template', $data);
 		} else {
