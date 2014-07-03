@@ -732,6 +732,10 @@ table tbody td {
     line-height: 2.6rem;
 }
 
+table tbody tr td {
+    padding-left: 0.5rem;
+}
+
 table tbody tr:first-child td {
     padding-top: 1rem;
 }
@@ -765,6 +769,10 @@ table .rounded.bottom {
 
 table .border-right {
     border-right: 1px solid #EAEAEA;
+}
+
+table tr:nth-child(even) {
+    background-color: #e3e3e3;
 }
 
 /* contact social */

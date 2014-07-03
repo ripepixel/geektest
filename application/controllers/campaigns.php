@@ -22,6 +22,11 @@ class Campaigns extends CI_Controller {
 			$data['job_types'] = $this->Job_model->getJobTypes(TRUE);
 			$data['salary_types'] = $this->Job_model->getSalaryTypes(TRUE);
 			$data['tests'] = $this->Test_model->getTests(TRUE);
+			// get expiry date from plan job_days
+			$exp_days = $this->Job_model->getExpiryDateFromPlanDays($this->session->userdata('plan_id'));
+			$expiry_date = strtotime("+".$exp_days." day");
+			$data['expiry_date'] = date("d/m/Y", $expiry_date);
+
 			$data['main'] = "campaigns/create";
 			$this->load->view('template/template', $data);
 		} else {
@@ -34,7 +39,6 @@ class Campaigns extends CI_Controller {
 	
 	public function save_campaign()
 	{
-		print_r($_POST);
 		// validate input
 		$this->form_validation->set_rules('title', 'Job Title', 'required');
 		$this->form_validation->set_rules('location', 'Job Location', 'required');
@@ -51,11 +55,19 @@ class Campaigns extends CI_Controller {
 			$data['job_types'] = $this->Job_model->getJobTypes(TRUE);
 			$data['salary_types'] = $this->Job_model->getSalaryTypes(TRUE);
 			$data['tests'] = $this->Test_model->getTests(TRUE);
+			// get expiry date from plan job_days
+			$exp_days = $this->Job_model->getExpiryDateFromPlanDays($this->session->userdata('plan_id'));
+			$expiry_date = strtotime("+".$exp_days." day");
+			$data['expiry_date'] = date("d/m/Y", $expiry_date);
 			$data['main'] = "campaigns/create";
 			$this->load->view('template/template', $data);
 			
 		} else {
 			// if expiry date is > plan date limit, set to today's date plus limit days
+
+			// format date
+			$date = DateTime::createFromFormat('d/m/Y', $this->input->post('expiry_date'));
+			$expiry_date = $date->format('Y-m-d');
 			
 			// create job
 			$data = array(
@@ -67,10 +79,11 @@ class Campaigns extends CI_Controller {
 				'salary_from' => $this->input->post('salary_from'),
 				'salary_to' => $this->input->post('salary_to'),
 				'job_type_id' => $this->input->post('job_type'),
-				'details' => $this->input->post('details'),
-				'expiry_date' => $this->input->post('expiry_date'),
+				'details' => nl2br($this->input->post('details')),
+				'expiry_date' => $expiry_date,
 				'report_email' => $this->input->post('report_email'),
-				'is_active' => 1
+				'is_active' => 1,
+				'created_at' => date('Y-m-d H:i:s', time())
 			);
 			
 			$this->Job_model->createJob($data);

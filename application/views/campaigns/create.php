@@ -131,7 +131,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <input type="date" name="expiry_date" value="<?php echo set_value('expiry_date'); ?>">
+                        <input type="date" name="expiry_date" value="<?php echo (set_value('expiry_date')) ? : $expiry_date; ?>" >
                         <?php if(form_error('expiry_date')) { echo form_error('expiry_date'); } ?>
                     </div>
                 </article>

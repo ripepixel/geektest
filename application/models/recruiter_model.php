@@ -32,10 +32,24 @@ class Recruiter_model extends CI_Model {
         
         if($q->num_rows() == 1) {
             $row = $q->row();
+
+            // get plan id
+            $this->db->where('recruiter_id', $row->id);
+            $pq = $this->db->get('plan_purchases');
+            
+            if($pq->num_rows() == 1) {
+                $plan_row = $pq->row();
+                $plan_id = $plan_row->plan_id;
+            } else {
+                $plan_id = NULL;
+            }
+           
+            // create session array
             $data = array(
                 'user_id' => $row->id,
                 'user_email' => $row->email,
-                'user_type' => 'recruiter'
+                'user_type' => 'recruiter',
+                'plan_id' => $plan_id
             );
 
             $this->session->set_userdata($data);

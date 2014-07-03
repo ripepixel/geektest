@@ -75,120 +75,43 @@
         <section id="skils">
             <div class="wrap">
                 <article class="container_12 content aligned center">
-                    <div class="grid_9 aligned left">
-                        <div class="skill-line">
-                            <div class="grid_3">
-                                <p>Java Script</p>
-                            </div>
-                            <div class="grid_5">
-                                <div class="num-line"><ins></ins></div>
-                            </div>
-                            <div class="grid_1">
-                                <div class="num" data-increment="0.17" data-num="8.7" data-fractional="1"><ins>0</ins></div>
-                            </div>
-                        </div>
-                        <div class="skill-line">
-                            <div class="grid_3">
-                                <p>Adobe Photoshop</p>
-                            </div>
-                            <div class="grid_5">
-                                <div class="num-line"><ins></ins></div>
-                            </div>
-                            <div class="grid_1">
-                                <div class="num" data-increment="0.11" data-num="5.3" data-fractional="1"><ins>0</ins></div>
-                            </div>
-                        </div>
-                        <div class="skill-line">
-                            <div class="grid_3">
-                                <p>Wordpress</p>
-                            </div>
-                            <div class="grid_5">
-                                <div class="num-line"><ins></ins></div>
-                            </div>
-                            <div class="grid_1">
-                                <div class="num" data-increment="0.16" data-num="7.9" data-fractional="1"><ins>0</ins></div>
-                            </div>
-                        </div>
-                        <div class="skill-line">
-                            <div class="grid_3">
-                                <p>CSS 3</p>
-                            </div>
-                            <div class="grid_5">
-                                <div class="num-line"><ins></ins></div>
-                            </div>
-                            <div class="grid_1">
-                                <div class="num" data-increment="0.09" data-num="4.6" data-fractional="1"><ins>0</ins></div>
-                            </div>
-                        </div>
-                        <div class="skill-line">
-                            <div class="grid_3">
-                                <p>Motion design</p>
-                            </div>
-                            <div class="grid_5">
-                                <div class="num-line"><ins></ins></div>
-                            </div>
-                            <div class="grid_1">
-                                <div class="num" data-increment="0.16" data-num="8.1" data-fractional="1"><ins>0</ins></div>
-                            </div>
-                        </div>
+                    <div class="grid12">
+                        <h2>Latest Jobs</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Job Title</th>
+                                    <th>Location</th>
+                                    <th>Job Type</th>
+                                    <th>Salary</th>
+                                    <th>Apply</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                if($jobs) {
+                                    foreach($jobs as $j) { ?>
+                                    <tr>
+                                        <td><?php echo $j['title']; ?></td>
+                                        <td><?php echo $j['location']; ?></td>
+                                        <td><?php echo $j['job_type']; ?></td>
+                                        <td>&pound;<?php echo (int)$j['salary_from']; ?> to &pound;<?php echo (int)$j['salary_to']; ?> <?php echo $j['salary_type']; ?></td>
+                                        <td>Apply Now</td>
+                                    </tr>
+
+                                <?php }
+                                } else {
+
+                                } ?>
+                            </tbody>
+                        </table>
                     </div>
                 </article>
                 <footer class="content-footer"></footer>
             </div>
         </section>
 
-        <!-- SECTION -->
-        <section id="branches">
-            <div class="wrap">
-                <header class="content-header"></header>
-                <article class="container_12 content">
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-list.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Web Development</h3>
-                        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero ace venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros.</p>
-                    </div>
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-design.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Design</h3>
-                        <p>Donec lectus sem, venenatis nec mollis id, pharetra eget ante. Cras sit amet ultricies turpis. Morbi viverra vitae nunc posuere convallis.</p>
-                    </div>
-                    <div class="separator"></div>
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-peoples.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Branding</h3>
-                        <p>Sed vehicula lobortis dictum. Mauris vel bibendum quam. Donec ullamcorper erat et mattis mattis. Cras odio nulla, bibendum quis purus quis, tincidunt pellentesque enim. Pellentesque habitant morbi tristique senectus.</p>
-                    </div>
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-papirus.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Content systems</h3>
-                        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero ace venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros.</p>
-                    </div>
-                    <div class="separator"></div>
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-strategy.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Strategy planing</h3>
-                        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero ace venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros.</p>
-                    </div>
-                    <div class="grid_1 aligned center">
-                        <img src="images/ico-management.png" alt="">
-                    </div>
-                    <div class="grid_5">
-                        <h3>Management</h3>
-                        <p>Mauris bibendum mauris sit amet sem consequat pretium. Aliquam interdum tellus mollis nunc eleifend faucibus. Nullam sagittis nisi non erat vestibulum, non egestas ipsum convallis. Fusce vel faucibus justo. Sed condimentum viverra nulla, sit amet consequat arcu auctor non. </p>
-                    </div>
-                </article>
-            </div>
-        </section>
+        
 
         <!-- SECTION -->
         <section id="works">

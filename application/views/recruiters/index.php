@@ -26,9 +26,31 @@
                     
                     <div class="grid_8">
                         <p>You currently have <strong><?php echo $credits; ?></strong> campaigns to use.</p>
-                        <p>Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, <strong>condimentum</strong> nec, tempora, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing.</p>
-                        <a href="about.html" class="button transparent-green"><span>View Campaigns</span></a>
-						<a href="<?php echo base_url(); ?>campaigns/create" class="button transparent-blue"><span>Create Campaign</span></a>
+                        <h3>Your Current Campaigns</h3>
+                        <?php
+                        if($campaigns) { ?>
+                            <table>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Test</th>
+                                    <th>Expires</th>
+                                </tr>
+                                <tbody>
+                        <?php
+                            foreach($campaigns as $c) { ?>
+                                <tr>
+                                    <td><?php echo $c['title']; ?></td>
+                                    <td><?php echo $c['test_name']; ?></td>
+                                    <td><?php echo date('d/m/Y', strtotime($c['expiry_date'])); ?></td>
+                                </tr>
+                        <?php } ?>
+                            </tbody>
+                            </table>
+                        <?php } else { ?>
+                            <p>You have not yet created any campaigns.</p>
+                        <?php } ?>
+                        <a href="<?php echo base_url(); ?>campaigns/create" class="button transparent-blue"><span>Create Campaign</span></a>
+                        <a href="about.html" class="button transparent-green"><span>View All Campaigns</span></a>
                     </div>
                 </article>
                 <footer class="content-footer"></footer>

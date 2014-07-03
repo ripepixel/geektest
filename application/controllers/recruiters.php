@@ -15,7 +15,7 @@ class Recruiters extends CI_Controller {
 	{
 		$credits = $this->Recruiter_model->getCredits($this->session->userdata('user_id'));
 		$data['credits'] = ($credits == 99999) ? 'Unlimited' : $credits;
-		$data['campaigns'] = $this->Job_model->getRecruiterJobs($this->session->userdata('user_id'))
+		$data['campaigns'] = $this->Job_model->getRecruiterJobsByExpiry($this->session->userdata('user_id'));
 		$data['main'] = "recruiters/index";
 		$this->load->view('template/template', $data);
 	}

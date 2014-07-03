@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 01, 2014 at 03:04 PM
+-- Generation Time: Jul 03, 2014 at 03:19 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -56,12 +56,22 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `salary_type_id` int(3) NOT NULL,
   `job_type_id` int(3) NOT NULL,
   `details` text NOT NULL,
-  `expiry_date` int(30) NOT NULL,
+  `expiry_date` date NOT NULL,
   `report_email` varchar(255) NOT NULL,
   `is_featured` int(1) NOT NULL DEFAULT '0',
   `is_active` int(1) NOT NULL DEFAULT '0',
+  `created_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `recruiter_id`, `test_id`, `title`, `location`, `salary_from`, `salary_to`, `salary_type_id`, `job_type_id`, `details`, `expiry_date`, `report_email`, `is_featured`, `is_active`, `created_at`) VALUES
+(5, 3, 2, 'Web Designer / Developer', 'Manchester', '20000.00', '30000.00', 1, 1, 'Brand new and exclusive role now available for a talented web designer based in Manchester. My client is based just west of Manchester in an easy to get to location. They are a specialist design agency with an interesting portfolio of clients. Whilst they are only a small company, they are well known, popular and a very friendly bunch.\r\nWe are open to designers at all levels, whether you are a recent graduate or if you have a good few years'' experience, salary will reflect this accordingly and is flexible dependant on experience. We are looking for someone that has recently studied or has experience in the following:\r\nHTML/HTML5\r\nCSS/CSS2/CSS3\r\nJQuery/JavaScript\r\nPhotoshop/Dreamweaver\r\nIf you have any .Net or PHP experience this will be an added bonus.\r\nIf you have the above skills and want to get stuck in to interesting design projects and interact with a range of clients please submit your CV. We are looking at graduate level upwards so keen to speak to anyone with the above skills from junior to mid/senior level. Salary is paying up to £30,000 dependant on experience. ', '2014-09-01', 'test@test.com', 0, 1, '2014-07-03 12:14:32'),
+(6, 3, 1, 'PHP Developer', 'Manchester', '20000.00', '25000.00', 1, 1, 'An exciting opportunity has arisen for a PHP Developer based in South Manchester to join one of the most exciting and innovative software houses.\r\n\r\nThis company is developing unique, leading-edge mobile applications that are being deployed world-wide. It has seen extraordinary growth over the last eighteen months, and now requires a visionary web developer to turn creative concepts into reality.\r\n\r\nAs a PHP Developer your duties will include:\r\n\r\n• Communicating with design agency to collate graphical components to be included within sections of the website and portal.\r\n• Implementing new PHP security technologies on both platforms to ensure efficient security.\r\n• Performing monitored and controlled penetration testing on both platforms to report on performance.\r\n• Implementing new pages onto platforms as and when required.\r\n• Reporting to line manager on analytics and usage reports to provide feedback on how end user interaction can be improved.\r\n• Documenting and annotating off-line versions of both platforms to comply with due diligence.\r\n\r\nAn ideal PHP Developer will hold the following skills and experiences:\r\n\r\n• Experience of HTML and MySQL .\r\n• Provide evidence of previous projects / works completed single-handedly.\r\n• It is desirable that candidates have an understanding of basic server connectivity for management (Webmin or SSH etc) and FTP access.\r\n\r\nIn return you will receive a salary of £20,000 - £25,000 per annum plus many benefits.\r\n\r\nThis is an unrivalled opportunity to shape and influence the emergence of a world-class product in an agile, energetic environment. Learning on the job, fast career progression is guaranteed.\r\n\r\n\r\nThe first stage of the application process is to apply online.\r\n\r\nCandidate Source Ltd is an Advertising Agency working on behalf of an Employment Agency. By applying for this position you are giving us permission to pass your CV and covering letter to a third party in relation to this specific vacancy. A full copy of our privacy policy can be viewed on our website.', '2014-07-30', 'test@test.com', 0, 1, '2014-07-03 10:40:06'),
+(7, 3, 5, 'Web Designer / Developer', 'Manchester', '20000.00', '30000.00', 1, 1, 'Web Designer/Developer – West Manchester – HTML, CSS, Photoshop, Dreamweaver, JQuery<br />\r\nBrand new and exclusive role now available for a talented web designer based in Manchester. My client is based just west of Manchester in an easy to get to location. They are a specialist design agency with an interesting portfolio of clients. Whilst they are only a small company, they are well known, popular and a very friendly bunch.<br />\r\nWe are open to designers at all levels, whether you are a recent graduate or if you have a good few years’ experience, salary will reflect this accordingly and is flexible dependant on experience. We are looking for someone that has recently studied or has experience in the following:<br />\r\nHTML/HTML5<br />\r\nCSS/CSS2/CSS3<br />\r\nJQuery/JavaScript<br />\r\nPhotoshop/Dreamweaver<br />\r\nIf you have any .Net or PHP experience this will be an added bonus.<br />\r\nIf you have the above skills and want to get stuck in to interesting design projects and interact with a range of clients please submit your CV. We are looking at graduate level upwards so keen to speak to anyone with the above skills from junior to mid/senior level. Salary is paying up to £30,000 dependant on experience.', '2014-07-30', 'test@test.com', 0, 1, '2014-07-03 14:38:20');
 
 -- --------------------------------------------------------
 
@@ -233,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `salary_types` (
 --
 
 INSERT INTO `salary_types` (`id`, `name`, `is_active`) VALUES
-(1, 'Annual', 1),
+(1, 'Annually', 1),
 (2, 'Daily', 1),
 (3, 'Hourly', 1);
 

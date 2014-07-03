@@ -23,7 +23,7 @@
                 <a href="<?php echo base_url(); ?>" class="logo"><?php echo $this->lang->line('common_site_name'); ?></a>
             </div>
             <div class="grid_10 aligned right">
-                <a href="#" class="menu-btn button transparent-white narrow">Menu</a>
+                <a href="<?php echo base_url(); ?>" class="top-btn button transparent-white narrow">Home</a>
                 <?php
                 if($this->session->userdata('user_type')) {
                     if($this->session->userdata('user_type') == 'candidate') {
@@ -52,7 +52,7 @@
         </div>
     </header> <!-- /header -->
 
-    <div class="extendmenu">
+    <!-- <div class="extendmenu">
         <div class="wrap">
             <header class="content-header container_12 aligned right">
                 <div class="grid_12">
@@ -114,4 +114,4 @@
                 </ul>
             </footer>
         </div>
-    </div>
+    </div> -->
