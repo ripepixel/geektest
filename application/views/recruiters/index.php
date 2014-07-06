@@ -34,6 +34,7 @@
                                     <th>Title</th>
                                     <th>Test</th>
                                     <th>Expires</th>
+																		<th>Actions</th>
                                 </tr>
                                 <tbody>
                         <?php
@@ -42,6 +43,7 @@
                                     <td><?php echo $c['title']; ?></td>
                                     <td><?php echo $c['test_name']; ?></td>
                                     <td><?php echo date('d/m/Y', strtotime($c['expiry_date'])); ?></td>
+																		<td><a href="<?php echo base_url(); ?>campaigns/edit/<?php echo $c['id']; ?>/<?php echo url_title($c['title']); ?>">Edit</a></td>
                                 </tr>
                         <?php } ?>
                             </tbody>

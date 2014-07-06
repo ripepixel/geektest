@@ -37,6 +37,29 @@ class Campaigns extends CI_Controller {
 
 	}
 	
+	public function edit()
+	{
+		$jid = $this->uri->segment(3); // get job id
+		// check job belongs to recruiter
+		if($this->Job_model->jobBelongsToRecruiter($jid, $this->session->userdata('user_id'))) {
+			// get job details
+			$data['job'] = $this->Job_model->getJob($jid);
+			$data['job_types'] = $this->Job_model->getJobTypes(TRUE);
+			$data['salary_types'] = $this->Job_model->getSalaryTypes(TRUE);
+			$data['tests'] = $this->Test_model->getTests(TRUE);
+			// get expiry date from plan job_days
+			$exp_days = $this->Job_model->getExpiryDateFromPlanDays($this->session->userdata('plan_id'));
+			$expiry_date = strtotime("+".$exp_days." day");
+			$data['expiry_date'] = date("d/m/Y", $expiry_date);
+
+			$data['main'] = "campaigns/edit";
+			$this->load->view('template/template', $data);
+		} else {
+			$this->session->set_flashdata('error', 'You can not access those details you cheeky monkey!');
+			redirect('recruiters/');
+		}
+	}
+	
 	public function save_campaign()
 	{
 		// validate input
@@ -64,7 +87,7 @@ class Campaigns extends CI_Controller {
 			
 		} else {
 			// if expiry date is > plan date limit, set to today's date plus limit days
-
+			
 			// format date
 			$date = DateTime::createFromFormat('d/m/Y', $this->input->post('expiry_date'));
 			$expiry_date = $date->format('Y-m-d');

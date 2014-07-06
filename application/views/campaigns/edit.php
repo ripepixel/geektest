@@ -7,7 +7,7 @@
                 <div class="slide-img mapbg"></div>
                 <article class="container_12 content aligned center">
                     <div class="grid_6">
-                        <h1 class="huge">Create Your Campaign</h1>
+                        <h1 class="huge">Edit Your Campaign</h1>
                     </div>
                     <div class="separator large"></div>
                 </article>
@@ -48,7 +48,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <input type="text" name="title" required value="<?php echo set_value('title'); ?>">
+                        <input type="text" name="title" required value="<?php echo $job->title ? : set_value('title'); ?>">
                         <?php if(form_error('title')) { echo form_error('title'); } ?>
                     </div>
                 </article>
@@ -59,7 +59,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <input type="text" name="location" required value="<?php echo set_value('location'); ?>">
+                        <input type="text" name="location" required value="<?php echo $job->location ? : set_value('location'); ?>">
                         <?php if(form_error('location')) { echo form_error('location'); } ?>
                     </div>
                 </article>
@@ -72,7 +72,7 @@
                     <div class="grid_9">
                         <select name="salary_type">
                             <?php foreach($salary_types as $st) { ?>
-                                <option value="<?php echo $st['id']; ?>" <?php echo set_select('salary_type', $st['id'], TRUE); ?>><?php echo $st['name']; ?></option>
+                                <option value="<?php echo $st['id']; ?>" <?php echo set_select('salary_type', $job->salary_type_id, $job->salary_type_id == $st['id'] ? TRUE : FALSE); ?>><?php echo $st['name']; ?></option>
                             <?php } ?>
                         </select>
                         <?php if(form_error('salary_type')) { echo form_error('salary_type'); } ?>
@@ -85,14 +85,14 @@
                     </div>
                     
                     <div class="grid_4">
-                        <input type="text" name="salary_from" placeholder="From" value="<?php echo set_value('salary_from'); ?>">
+                        <input type="text" name="salary_from" placeholder="From" value="<?php echo $job->salary_from ? : set_value('salary_from'); ?>">
                         <?php if(form_error('salary_from')) { echo form_error('salary_from'); } ?>
                     </div>
                     <div class="grid_1">
                         
                     </div>
                     <div class="grid_4">
-                        <input type="text" name="salary_to" placeholder="To" required value="<?php echo set_value('salary_to'); ?>">
+                        <input type="text" name="salary_to" placeholder="To" required value="<?php echo $job->salary_to ? : set_value('salary_to'); ?>">
                         <?php if(form_error('salary_to')) { echo form_error('salary_to'); } ?>
                     </div>
                 </article>
@@ -107,7 +107,7 @@
                     <div class="grid_9">
                         <select name="job_type">
                             <?php foreach($job_types as $jt) { ?>
-                                <option value="<?php echo $jt['id']; ?>" <?php echo set_select('job_type', $jt['id'], TRUE); ?>><?php echo $jt['name']; ?></option>
+                                <option value="<?php echo $jt['id']; ?>" <?php echo set_select('job_type', $job->job_type_id, $job->job_type_id == $jt['id'] ? TRUE : FALSE); ?>><?php echo $jt['name']; ?></option>
                             <?php } ?>
                         </select>
                         <?php if(form_error('job_type')) { echo form_error('job_type'); } ?>
@@ -120,7 +120,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <textarea name="details" required><?php echo set_value('details'); ?></textarea>
+                        <textarea name="details" required><?php echo $job->details ? : set_value('details'); ?></textarea>
                         <?php if(form_error('details')) { echo form_error('details'); } ?>
                     </div>
                 </article>
@@ -131,7 +131,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <input type="text" name="expiry_date" value="<?php echo (set_value('expiry_date')) ? : $expiry_date; ?>" placeholder="dd/mm/yyyy">
+                        <input type="text" name="expiry_date" value="<?php echo date('d/m/Y', strtotime($job->expiry_date)) ? : $expiry_date; ?>" placeholder="dd/mm/yyyy">
                         <?php if(form_error('expiry_date')) { echo form_error('expiry_date'); } ?>
                     </div>
                 </article>
@@ -154,7 +154,7 @@
                     <div class="grid_9">
                         <ul>
                         <?php foreach($tests as $test) { ?>
-                            <li><input type="radio" name="test" value="<?php echo $test['id']; ?>" <?php echo set_radio('test', $test['id'], true); ?> > <?php echo $test['name']; ?></li>
+                            <li><input type="radio" name="test" value="<?php echo $test['id']; ?>" <?php echo set_radio('test', $job->test_id, $job->test_id == $test['id'] ? TRUE : FALSE); ?> > <?php echo $test['name']; ?></li>
                         <?php } ?>
                         </ul>
 
@@ -178,7 +178,7 @@
                     </div>
 
                     <div class="grid_9">
-                       <input type="submit" value="Create" class="button">
+                       <input type="submit" value="Update" class="button">
                     </div>
                 
                 </article>

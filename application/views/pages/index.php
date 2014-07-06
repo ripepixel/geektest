@@ -16,6 +16,46 @@
             </div>
         </section>
 
+				<!-- SECTION -->
+        <section id="skils">
+            <div class="wrap">
+                <article class="container_12 content aligned center vpadding-medium">
+                    <div class="grid12">
+                        <h2>Latest Jobs</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Job Title</th>
+                                    <th>Location</th>
+                                    <th>Job Type</th>
+                                    <th>Salary</th>
+                                    <th>Apply</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                if($jobs) {
+                                    foreach($jobs as $j) { ?>
+                                    <tr>
+                                        <td><?php echo $j['title']; ?></td>
+                                        <td><?php echo $j['location']; ?></td>
+                                        <td><?php echo $j['job_type']; ?></td>
+                                        <td>Up to &pound;<?php echo number_format((int)$j['salary_to']); ?> <?php echo $j['per_name']; ?></td>
+                                        <td>Apply Now</td>
+                                    </tr>
+
+                                <?php }
+                                } else {
+
+                                } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <footer class="content-footer"></footer>
+            </div>
+        </section>
+
         <!-- SECTION -->
         <section id="slideserv">
             <div class="wrap slider" data-auto="false" data-fx="crossfade">
@@ -71,45 +111,7 @@
             </div>
         </section>
 
-        <!-- SECTION -->
-        <section id="skils">
-            <div class="wrap">
-                <article class="container_12 content aligned center">
-                    <div class="grid12">
-                        <h2>Latest Jobs</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Job Title</th>
-                                    <th>Location</th>
-                                    <th>Job Type</th>
-                                    <th>Salary</th>
-                                    <th>Apply</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                if($jobs) {
-                                    foreach($jobs as $j) { ?>
-                                    <tr>
-                                        <td><?php echo $j['title']; ?></td>
-                                        <td><?php echo $j['location']; ?></td>
-                                        <td><?php echo $j['job_type']; ?></td>
-                                        <td>&pound;<?php echo (int)$j['salary_from']; ?> to &pound;<?php echo (int)$j['salary_to']; ?> <?php echo $j['salary_type']; ?></td>
-                                        <td>Apply Now</td>
-                                    </tr>
-
-                                <?php }
-                                } else {
-
-                                } ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </article>
-                <footer class="content-footer"></footer>
-            </div>
-        </section>
+        
 
         
 
