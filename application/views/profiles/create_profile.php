@@ -21,9 +21,8 @@
                     <div class="grid_3">
                     </div>
 
-                    <div class="grid_9">
-                        <p class="error">Some errors have occurred:</p>
-                            <?php echo validation_errors(); ?>
+                    <div class="grid_9 error-message">
+                        <p class="error">Some errors have occurred; please check below.</p>
                     </div>
                 </article>
                                     
@@ -37,7 +36,7 @@
                     </div>
                     
                     <div class="grid_9">
-                        <input type="text" name="full_name">
+                        <input type="text" name="full_name" required>
                         <?php if(form_error('full_name')) { echo form_error('full_name'); } ?>
                     </div>
                 </article>
@@ -92,9 +91,9 @@
                     </div>
                     
                     <div class="grid_9">
-                        <select>
-                            <option>Male</option>
-                            <option>Female</option>
+                        <select name="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
                         </select>
                         <?php if(form_error('gender')) { echo form_error('gender'); } ?>
                     </div>

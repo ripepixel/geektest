@@ -6,6 +6,7 @@ class Profiles extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Candidate_model');
+		$this->load->model('Profile_model');
 		// need to check that it is either the profile owner
 		// or that it is a recruiter who has access to the 
 		// profiles
@@ -19,7 +20,7 @@ class Profiles extends CI_Controller {
 
 	public function view()
 	{
-		// check it is the profile owner of a recruiter with access
+		// check it is the profile owner or a recruiter with access
 	}
 
 	public function create_profile()
@@ -66,8 +67,7 @@ class Profiles extends CI_Controller {
 			$this->form_validation->set_rules('full_name', 'Full Name', 'required');
 			$this->form_validation->set_rules('address', 'Address', 'required');
 			$this->form_validation->set_rules('telephone', 'Telephone', 'required');
-			$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-			$this->form_validation->set_rules('dob', 'Date Of Birth', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'valid_email');
 			$this->form_validation->set_rules('bio', 'About You', 'required');
 			$this->form_validation->set_rules('skills', 'Your Skills', 'required');
 			$this->form_validation->set_rules('quals', 'Qualifications', 'required');
@@ -100,7 +100,33 @@ class Profiles extends CI_Controller {
 				$data['main'] = "profiles/create_profile";
 				$this->load->view('template/template', $data);
 			} else {
+				// get data and save it
+				if($this->input->post('dob')) {
+					$dob = DateTime::createFromFormat('d/m/Y', $this->input->post('dob'));
+					$dob_date = $date->format('Y-m-d');
+				} else {
+					$dob_date = '';
+				}
 				
+				$data = array(
+					'candidate_id' => $this->session->userdata('user_id'),
+					'full_name' => $this->input->post('full_name'),
+					'address' => nl2br($this->input->post('address')),
+					'telephone' => $this->input->post('telephone'),
+					'email' => $this->input->post('email'),
+					'dob' => $dob_date,
+					'gender' => $this->input->post('gender'),
+					'bio' => $this->input->post('bio'),
+					'skills' => $this->input->post('skills'),
+					'qualifications' => $this->input->post('quals'),
+					'work_history' => $this->input->post('work_history'),
+					'more_info' => $this->input->post('more_info'),
+					'created_at' => date('Y-m-d')
+				);
+				
+				$this->Profile_model->createProfile($data);
+				$this->session->set_flashdata('success', 'Great, you have created your profile');
+				redirect('candidates');
 			}
 		}
 	}

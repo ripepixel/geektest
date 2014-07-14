@@ -34,7 +34,7 @@
 	                    <div class="grid_3">
 	                    </div>
 
-	                    <div class="grid_9">
+	                    <div class="grid_9 error-message">
 													<p class="error">Some errors have occurred:</p>
 	                        <?php echo validation_errors(); ?>
 	                    </div>
