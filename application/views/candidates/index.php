@@ -25,7 +25,7 @@
                     
                     <div class="grid_8">
                         <p>Complete your online profile so that potential recruiters can match you to jobs. You can also upload your current CV.</p>
-                        <a href="" class="button transparent-green"><span>Online Profile</span></a>
+                        <a href="<?php echo base_url(); ?>profiles/create_profile" class="button transparent-green"><span>Online Profile</span></a>
                         <a href="" class="button transparent-blue"><span>Upload CV</span></a>
                     </div>
                 </article>

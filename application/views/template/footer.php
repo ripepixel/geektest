@@ -36,6 +36,12 @@
 
 <script src="<?php echo base_url(); ?>js/jquery-2.1.0.min.js"></script>
 <script src="<?php echo base_url(); ?>js/jquery.plugins.js"></script>
+<?php
+if(isset($extra_scripts)) {
+    echo $extra_scripts;
+}
+?>
 <script src="<?php echo base_url(); ?>js/custom.js"></script>
+
 </body>
 </html>

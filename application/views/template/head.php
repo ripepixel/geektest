@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/responsive.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/themes.css">
+    <?php
+        if(isset($extra_css)) {
+            echo $extra_css;
+        }
+    ?>
 </head>
 <body>
 

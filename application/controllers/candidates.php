@@ -16,15 +16,7 @@ class Candidates extends CI_Controller {
 		$this->load->view('template/template', $data);
 	}
 
-	public function create_profile()
-	{
-		$data['main'] = "candidates/create_profile";
-		$this->load->view('template/template', $data);
-	}
-
-
-
-
+	
 
 
 }

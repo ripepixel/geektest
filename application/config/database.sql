@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 03, 2014 at 03:19 PM
+-- Generation Time: Jul 14, 2014 at 03:29 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -176,6 +176,31 @@ INSERT INTO `plan_purchases` (`id`, `recruiter_id`, `plan_id`, `price`, `payment
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `profiles`
+--
+
+CREATE TABLE IF NOT EXISTS `profiles` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `candidate_id` int(6) NOT NULL,
+  `full_name` varchar(255) DEFAULT NULL,
+  `address` text,
+  `telephone` varchar(20) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `gender` varchar(20) DEFAULT NULL,
+  `bio` text,
+  `skills` text,
+  `qualifications` text,
+  `work_history` text,
+  `more_info` text,
+  `created_at` date DEFAULT NULL,
+  `updated_at` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `question_categories`
 --
 
@@ -234,6 +259,7 @@ CREATE TABLE IF NOT EXISTS `salaries` (
 CREATE TABLE IF NOT EXISTS `salary_types` (
   `id` int(3) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
+  `per_name` varchar(255) NOT NULL,
   `is_active` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
@@ -242,10 +268,10 @@ CREATE TABLE IF NOT EXISTS `salary_types` (
 -- Dumping data for table `salary_types`
 --
 
-INSERT INTO `salary_types` (`id`, `name`, `is_active`) VALUES
-(1, 'Annually', 1),
-(2, 'Daily', 1),
-(3, 'Hourly', 1);
+INSERT INTO `salary_types` (`id`, `name`, `per_name`, `is_active`) VALUES
+(1, 'Annually', 'per Year', 1),
+(2, 'Daily', 'per Day', 1),
+(3, 'Hourly', 'per Hour', 1);
 
 -- --------------------------------------------------------
 

@@ -53,6 +53,30 @@ class Candidate_model extends CI_Model {
         }
     }
 
+    function isValidCandidate()
+    {
+        if($this->session->userdata('user_type')) {
+           if($this->session->userdata('user_type') == "candidate") {
+                return TRUE;
+           } else {
+                $this->session->set_flashdata('error', 'Please log in first');
+                redirect('launch/candidates');
+           } 
+        }
+    }
+
+    function candidateHasProfile($uid)
+    {
+        $this->db->where('candidate_id', $uid);
+        $q = $this->db->get('profiles');
+
+        if($q->num_rows() > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
 /*
 
     function validateUser($email, $password)
