@@ -961,9 +961,11 @@ table tr:nth-child(even) {
 }
 
 .alert {
+    margin-top: 50px;
     font-size: 2rem;
     font-family: 'texgyreherosbold';
     padding: 1rem;
+    text-align: center;
 }
 
 .alert.alert-error {

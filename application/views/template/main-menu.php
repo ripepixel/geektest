@@ -1,20 +1,4 @@
-<?php
-    if ($this->session->flashdata('success')) {
-        echo '<div class="container_12" id="alert-hide">';
-            echo "<div class='grid_12 alert alert-success'>";
-                echo $this->session->flashdata('success');
-            echo "</div>";
-        echo "</div>";
-    }
 
-    if ($this->session->flashdata('error')) {
-    echo '<div class="container_12">';
-        echo "<div class='grid_12 alert alert-error'>";
-            echo $this->session->flashdata('error');
-        echo "</div>";
-    echo "</div>";
-    }
-?>
 
 <!-- HEADER -->
     <header class="header fixed">
@@ -51,6 +35,24 @@
             </div>
         </div>
     </header> <!-- /header -->
+
+    <?php
+    if ($this->session->flashdata('success')) {
+        echo '<div class="container_12" id="alert-hide">';
+            echo "<div class='grid_12 alert alert-success'>";
+                echo $this->session->flashdata('success');
+            echo "</div>";
+        echo "</div>";
+    }
+
+    if ($this->session->flashdata('error')) {
+    echo '<div class="container_12">';
+        echo "<div class='grid_12 alert alert-error'>";
+            echo $this->session->flashdata('error');
+        echo "</div>";
+    echo "</div>";
+    }
+?>
 
     <!-- <div class="extendmenu">
         <div class="wrap">
