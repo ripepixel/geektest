@@ -253,6 +253,37 @@ class Profiles extends CI_Controller {
 			}
 		}
 	}
+
+	public function upload_cv()
+	{
+		// load dropzone.js
+		$data['extra_css'] = '<link rel="stylesheet" href="'.base_url().'css/dropzone.css">';
+		$data['extra_scripts'] = '<script src="'.base_url().'js/dropzone.js"></script>
+		<script>
+				Dropzone.options.cvUpload = {
+					addRemoveLinks: true,
+					maxFiles : 1,
+					maxFilesize: 1,
+					acceptedFiles: "application/pdf, application/msword, text/plain"
+				};
+			</script>
+		';
+
+		$data['main'] = "profiles/upload_cv";
+		$this->load->view('template/template', $data);
+	}
+
+	public function save_cv()
+	{
+		$this->form_validation->set_rules('file', 'CV Upload', 'required');
+
+		if($this->form_validation->run() == false) {
+			redirect('profiles/upload_cv');
+		} else {
+			// process file upload
+			echo "file uploaded";
+		}
+	}
 	
 
 

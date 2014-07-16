@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 15, 2014 at 03:34 PM
+-- Generation Time: Jul 16, 2014 at 02:23 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -38,6 +38,20 @@ CREATE TABLE IF NOT EXISTS `candidates` (
 
 INSERT INTO `candidates` (`id`, `email`, `password`, `confirm_code`, `is_confirmed`, `created_at`) VALUES
 (1, 'test@test.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'a6ad00ac113a19d953efb91820d8788e2263b28a', 0, 1403527375);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cv_uploads`
+--
+
+CREATE TABLE IF NOT EXISTS `cv_uploads` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `candidate_id` int(6) NOT NULL,
+  `file_name` varchar(255) NOT NULL,
+  `upload_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
